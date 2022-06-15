@@ -1,38 +1,124 @@
 .App {
-  text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input, textarea {
+    font-size: 16px;
+    border: 0;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    background: #d7f1ed;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.center-text {
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resize {
+    cursor: col-resize;
+    width: 30px;
+    height: 130vh;
+    background: rgba(0,0,0,20%);
+    transition: 0.1s background linear;
+}
+
+.resize:hover {
+    background: #4029a8;
+}
+
+.form-group1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 40px;
+    grid-gap: 20px;
+}
+
+.title {
+    /*position: relative;*/
+    top: 40px;
+}
+
+.send {
+    width: 53vw;
+    padding: 10px;
+    border: black solid 0px;
+    resize: horizontal;
+    overflow: auto;
+}
+
+.form-group2 {
+    /*position: relative;*/
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding-top: 50px;
+    top: 5vh;
+}
+
+textarea {
+    resize: none;
+    height: 4rem;
+}
+
+#language {
+    padding: 5px;
+
+}
+
+input[type=file] {
+    background: rgb(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+input::file-selector-button {
+      background: lightgray;
+        padding: 15px;
+        border-radius: 15px;
+    border: dodgerblue  dashed 2px;
+
+}
+
+input::file-selector-button:hover {
+    cursor: pointer;
+    background: lightblue;
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+
+.preview {
+    border: black solid 0px;
+    padding: 10px;
+    resize: horizontal;
+    overflow: auto;
+}
+
+.editor1 {
+    overflow: auto;
+}
+
+@media (max-width: 650px) {
+    .form-group1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 40px;
+        grid-gap: 20px;
+    }
 }
