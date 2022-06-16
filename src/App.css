@@ -1,6 +1,10 @@
 .App {
 }
 
+p, h3 {
+    color: white;
+}
+
 input, textarea {
     font-size: 16px;
     border: 0;
@@ -8,10 +12,15 @@ input, textarea {
     box-sizing: border-box;
     border-radius: 5px;
     padding: 10px;
+    background-color: #f5f5f5;
+}
+
+input:focus, textarea:focus {
+    outline: 3px solid orange;
 }
 
 body {
-    background: #d7f1ed;
+    background: #27282c;
 }
 
 .center-text {
@@ -47,14 +56,14 @@ body {
 }
 
 .title {
-    /*position: relative;*/
     top: 40px;
 }
+
 
 .send {
     width: 53vw;
     padding: 10px;
-    border: black solid 0px;
+    border: black solid 0;
     resize: horizontal;
     overflow: auto;
 }
@@ -104,7 +113,7 @@ input::file-selector-button:hover {
 
 
 .preview {
-    border: black solid 0px;
+    border: black solid 0;
     padding: 10px;
     resize: horizontal;
     overflow: auto;
