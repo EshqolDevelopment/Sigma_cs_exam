@@ -1,0 +1,133 @@
+
+
+.profile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--theme);
+    overflow: hidden;
+}
+
+.profile-header {
+    position: absolute;
+    height: 11vh;
+    width: 100vw;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-body {
+    position: absolute;
+    top: 25vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 750px;
+    height: 450px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.line-menu {
+    position: absolute;
+    left: 22%;
+    height: 100%;
+    width: 5px;
+    background: black;
+}
+
+.profile-body-left {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 22%;
+    background: wheat;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow: auto;
+}
+
+.profile-body-right {
+    position: absolute;
+    height: 100%;
+    left: 23%;
+    width: 78%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.left-menu-item {
+    position: relative;
+    border-bottom: 3px solid black;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.create-new {
+    position: absolute;
+    right: 4%;
+    top: 4%;
+}
+
+.title {
+    position: relative;
+    left: 0;
+    width: 68.5%;
+    top: 3%;
+    text-align: center;
+}
+
+.list {
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    left: 10%;
+    max-height: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow: auto;
+}
+
+.question-item {
+    position: relative;
+    width: 80%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 18px;
+    background-color: wheat;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.list * {
+    margin-bottom: 20px;
+}
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+.red {
+    color: red;
+}

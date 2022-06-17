@@ -5,17 +5,16 @@ export const map: Record<string, string> = {
     'name': "Hello",
     'subject': "String",
     'level': "Easy",
-    'time': "800",
-    'description': "...",
+    'description': "This is the description",
     'image': "",
-    'inputs': "",
-    'outputs': "",
-    'solution': "",
-    'outputType': "",
+    'outputType': "int",
 }
 
 
 export const args: Record<string, string> = { }
+
+
+export const tests: Record<string, string> = { }
 
 
 export const languages: string[] = []
@@ -28,3 +27,5 @@ export function title(inp: string) {
     }
     return str.slice(0, -1)
 }
+
+
