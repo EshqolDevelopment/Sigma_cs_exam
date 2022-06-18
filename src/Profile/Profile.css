@@ -84,8 +84,8 @@
     position: relative;
     left: 0;
     width: 68.5%;
-    top: 3%;
     text-align: center;
+    margin-top: 32px;
 }
 
 .list {

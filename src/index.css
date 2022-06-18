@@ -16,7 +16,6 @@ code {
   --theme: dodgerblue;
 }
 
-
 .button-22 {
   align-items: center;
   background-color: #0276FF;
@@ -48,6 +47,31 @@ code {
 
 .button-22:hover {
   background-color: #1C84FF;
+}
+
+.left, .right {
+  position: absolute;
+  bottom: 6%;
+  height: auto;
+  width: 35px;
+}
+
+.right {
+  right: 3%;
+}
+
+.left {
+  left: 3%;
+}
+
+select {
+  font-size: 16px;
+  border: 2px solid var(--theme);
+  border-radius: 6px;
+}
+
+textarea {
+  resize: none;
 }
 
 .lds-roller {

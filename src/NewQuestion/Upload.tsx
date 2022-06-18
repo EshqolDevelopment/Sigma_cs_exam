@@ -6,7 +6,8 @@ import { tests, languages, map, args, title} from '../Helper'
 import AceEditor from "react-ace";
 import * as firebase from '../firebase';
 import { getFirestore, doc, updateDoc } from 'firebase/firestore'
-
+import 'brace/theme/monokai'
+import 'brace/mode/python'
 
 
 export default function Upload() {
@@ -26,7 +27,7 @@ export default function Upload() {
 
     const contents = [
         <div>
-            <div className={'title'}>
+            <div className={'title123'}>
                 <h3>Build a custom exam for your interviews</h3>
                 <h3>Let's start with the name of the function</h3>
             </div>
@@ -51,7 +52,7 @@ export default function Upload() {
         </div>,
 
         <div>
-            <div className={'title'}>
+            <div className={'title123'}>
                 <h3>Add arguments (optimal)</h3>
             </div>
 
@@ -72,7 +73,7 @@ export default function Upload() {
         </div>,
 
         <div>
-            <div className={'title'}>
+            <div className={'title123'}>
                 <h3>Select the languages that the test support</h3>
             </div>
 
@@ -90,7 +91,7 @@ export default function Upload() {
         </div>,
 
         <div>
-            <div className={'title'}>
+            <div className={'title123'}>
                 <h3>Write the solution for this problem in Python</h3>
             </div>
 
@@ -100,7 +101,7 @@ export default function Upload() {
         </div>,
 
         <div>
-            <div className={'title'}>
+            <div className={'title123'}>
                 <h3>Add test cases for the question</h3>
             </div>
 
@@ -506,5 +507,3 @@ validate_output(func, inp, out)
         </div>
     )
 }
-
-
